@@ -1,0 +1,18 @@
+Source is in src/
+Compiled .jar files (and required libs) are in binaries/ for ease of use; javac should generate the same binaries from what's in src/
+
+Various options for running things:
+To straighten a bitmapped carrot into a second file, run:
+java -cp binaries/* org.uwm.carrots.Straightener <file or directory>
+
+Straightener will create a second file with a "straightened" carrot, and append the amount of curvature to the file, in either pixels or mm, depending on whether a scale is present in the file name.
+
+To extract single carrots, QR codes, and scale from a multi-carrot image, run:
+java -cp binaries/* org.uwm.carrots.Main <file> <output root directory> <expected number of carrots>
+
+Main looks for individual carrot boxes, and tries to extract QR codes from the sub-images. If it finds the expected number of carrots, it will mirror the directory structure (so if you pass it Carrots/foo.png, it will output to <root dir>/Carrots/<sub image>.png), and save the sub-images with the QR codes and a pixels-per-meter scale value as the names.
+
+To extract a scale from an image into the filename, run:
+java -cp binaries/* org.uwm.carrots.ScaleFinder <file or directory to extract>
+
+ScaleFinder will attempt to rename the files with a pixels-per-meter appended to the file name, based on the pixels in the green scale bar or (if that's missing) the blue circle.

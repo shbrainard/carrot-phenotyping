@@ -1,0 +1,79 @@
+Acquisition
+
+cd /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/code/java/
+
+for filename in *.NEF ; do dcraw -c -w "$filename" | pnmtopng > "$filename.png" ; done
+
+java -cp "binaries/*" org.uwm.carrots.Main "PNGs/"
+
+java -cp "binaries/*" org.uwm.carrots.Main 9_rep1_14.47.27.tif /Users/shbrainard/Desktop 6
+
+
+
+java -cp "binaries/*" org.uwm.carrots.Straightener //Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2018_CA/B2566A/binary_mask
+
+java -cp "binaries/*" org.uwm.carrots.ScaleFinder /WAY268C/
+
+
+
+
+
+
+2017_WI
+
+Used in crosses
+
+java -cp "binaries/*" org.uwm.carrots.Straightener  /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2017_WI/lined/used_in_crosses/B2566B/binary_mask 
+java -cp "binaries/*" org.uwm.carrots.Straightener  /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2017_WI/lined/used_in_crosses/L1408A/binary_mask 
+java -cp "binaries/*" org.uwm.carrots.Straightener  /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2017_WI/lined/used_in_crosses/L1408B/binary_mask 
+java -cp "binaries/*" org.uwm.carrots.Straightener  /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2017_WI/lined/used_in_crosses/OSSI-Ball/binary_mask 
+java -cp "binaries/*" org.uwm.carrots.Straightener  /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2017_WI/lined/used_in_crosses/W133B/binary_mask 
+java -cp "binaries/*" org.uwm.carrots.Straightener  /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2017_WI/lined/used_in_crosses/W278A/binary_mask 
+java -cp "binaries/*" org.uwm.carrots.Straightener  /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2017_WI/lined/used_in_crosses/W278B/binary_mask 
+java -cp "binaries/*" org.uwm.carrots.Straightener  /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2017_WI/lined/used_in_crosses/W279A/binary_mask 
+java -cp "binaries/*" org.uwm.carrots.Straightener  /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2017_WI/lined/used_in_crosses/W279B/binary_mask 
+java -cp "binaries/*" org.uwm.carrots.Straightener  /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2017_WI/lined/used_in_crosses/W280B/binary_mask 
+java -cp "binaries/*" org.uwm.carrots.Straightener  /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2017_WI/lined/used_in_crosses/W287A/binary_mask 
+java -cp "binaries/*" org.uwm.carrots.Straightener  /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2017_WI/lined/used_in_crosses/W289A/binary_mask 
+java -cp "binaries/*" org.uwm.carrots.Straightener  /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2017_WI/lined/used_in_crosses/W287A/binary_mask 
+java -cp "binaries/*" org.uwm.carrots.Straightener  /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2017_WI/lined/used_in_crosses/WAY268C/binary_mask
+java -cp "binaries/*" org.uwm.carrots.Straightener  /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2017_WI/lined/used_in_crosses/WAY271B/binary_mask
+
+
+
+Additional
+
+java -cp "binaries/*" org.uwm.carrots.Straightener  /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2017_WI/lined/extra/Arrowhead/binary_mask 
+java -cp "binaries/*" org.uwm.carrots.Straightener  /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2017_WI/lined/extra/B2566A/binary_mask 
+java -cp "binaries/*" org.uwm.carrots.Straightener  /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2017_WI/lined/extra/Crispy-Cut/binary_mask 
+java -cp "binaries/*" org.uwm.carrots.Straightener  /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2017_WI/lined/extra/Honeysnax/binary_mask 
+java -cp "binaries/*" org.uwm.carrots.Straightener  /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2017_WI/lined/extra/OSSI-Chantenay/binary_mask 
+java -cp "binaries/*" org.uwm.carrots.Straightener  /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2017_WI/lined/extra/OSSI-Nantes/binary_mask 
+java -cp "binaries/*" org.uwm.carrots.Straightener  /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2017_WI/lined/extra/Seminis/binary_mask 
+java -cp "binaries/*" org.uwm.carrots.Straightener  /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2017_WI/lined/extra/W277B/binary_mask 
+
+
+
+
+
+2018_CA
+
+java -cp "binaries/*" org.uwm.carrots.Straightener /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2018_CA/B2566A/binary_mask
+java -cp "binaries/*" org.uwm.carrots.Straightener /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2018_CA/L1408A/binary_mask
+java -cp "binaries/*" org.uwm.carrots.Straightener /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2018_CA/OSSI-Ball/binary_mask  
+java -cp "binaries/*" org.uwm.carrots.Straightener /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2018_CA/OSSI-Chantenay/binary_mask 
+java -cp "binaries/*" org.uwm.carrots.Straightener /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2018_CA/OSSI-Nantes/binary_mask 
+java -cp "binaries/*" org.uwm.carrots.Straightener /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2018_CA/W259A/binary_mask  
+java -cp "binaries/*" org.uwm.carrots.Straightener /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2018_CA/W259B/binary_mask 
+java -cp "binaries/*" org.uwm.carrots.Straightener /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2018_CA/W271A/binary_mask 
+java -cp "binaries/*" org.uwm.carrots.Straightener /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2018_CA/W271B/binary_mask
+java -cp "binaries/*" org.uwm.carrots.Straightener /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2018_CA/W278A/binary_mask
+java -cp "binaries/*" org.uwm.carrots.Straightener /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2018_CA/W278B/binary_mask
+java -cp "binaries/*" org.uwm.carrots.Straightener /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2018_CA/W279A/binary_mask
+java -cp "binaries/*" org.uwm.carrots.Straightener /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2018_CA/W279B/binary_mask
+java -cp "binaries/*" org.uwm.carrots.Straightener /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2018_CA/W280A/binary_mask
+java -cp "binaries/*" org.uwm.carrots.Straightener /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2018_CA/W280B/binary_mask
+java -cp "binaries/*" org.uwm.carrots.Straightener /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2018_CA/W289A/binary_mask
+java -cp "binaries/*" org.uwm.carrots.Straightener /Users/shbrainard/Dropbox/Wisconsin/Thesis/Phenotyping/image_processing/2018_CA/WAY268C/binary_mask
+
+

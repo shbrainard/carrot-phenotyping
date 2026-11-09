@@ -4,3 +4,6 @@ __pycache__/
 .cache
 .pytest_cache
 data/
+
+# Per-machine settings, which can record command lines with tokens
+**/.claude/settings.local.json
